@@ -1,0 +1,18 @@
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.horario {
+    font-size: 32px;
+}

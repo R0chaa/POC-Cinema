@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import Cabecalho from "./components/cabecalho";
+import Conteudo from "./components/conteudo";
 
 export default function Home() {
   const [filmes, setFilmes] = useState([]);
@@ -26,6 +27,7 @@ export default function Home() {
   return (
     <div>
       <Cabecalho dados={filmes}/>
+      <Conteudo dados={filmes}/>
     </div>
   );
 }
