@@ -1,25 +1,31 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import Cabecalho from "./components/cabecalho";
 
 export default function Home() {
-    const [filmes, setFilmes] = useState([]);
-    useEffect(() => {
-      async function fetchFilmes() {
-        try {
-          const res = await fetch("http://localhost:3001");
-          const data = await res.json();
-          await setFilmes(data);
-        } catch (err) {
-          console.log(err);
-        }
+  const [filmes, setFilmes] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchFilmes() {
+      try {
+        const res = await fetch("/dados.json"); // URL para acessar o JSON local
+        const data = await res.json();
+        setFilmes(data);
+      } catch (err) {
+        console.error("Erro ao carregar o JSON:", err.message);
+      } finally {
+        setLoading(false);
       }
-  
-      fetchFilmes();
-    }, []);
+    }
+    fetchFilmes();
+  }, []);
+
+  if (loading) return <p>Carregando...</p>;
 
   return (
     <div>
-      <h1>Poc-6</h1>
+      <Cabecalho dados={filmes}/>
     </div>
   );
 }
