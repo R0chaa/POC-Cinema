@@ -1,0 +1,43 @@
+.seat {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.seat:hover {
+  transform: scale(1.1);
+}
+
+.seat.indisponivel:hover,
+.seat.indisponivelLight:hover {
+  transform: none; 
+  cursor: not-allowed; 
+}
+
+.disponivel {
+  background-color: #ddd;
+}
+
+.selecionado {
+  background-color: #355691;
+}
+
+.indisponivel {
+  background-color: #505050;
+  cursor: not-allowed;
+}
+
+.disponivelLight {
+  background-color: #bababa; 
+}
+
+.selecionadoLight {
+  background-color: #3f7a49; 
+}
+
+.indisponivelLight {
+  background-color: #3F4045; 
+  cursor: not-allowed;
+}
