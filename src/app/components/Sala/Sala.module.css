@@ -1,0 +1,92 @@
+.seatContainer {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.lastRow {
+  justify-content: center; 
+}
+
+.screen {
+  margin-top: 40px;
+  height: 21px;
+  width: calc(8 * 32px + 7 * 10px); 
+  background-color: #505050;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color 0.3s; 
+}
+
+.screenLight {
+  background-color: #9b9b9b; 
+}
+
+.legend {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: background-color 0.3s; 
+}
+
+.livre {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.selecionado {
+  background-color: #355691;
+}
+
+.indisponivel {
+  background-color: #505050;
+}
+
+.livreLight {
+  background-color: #bababa; 
+  border: 1px solid #ccc;
+}
+
+.selecionadoLight {
+  background-color: #3f7a49; 
+}
+
+.indisponivelLight {
+  background-color: #3F4045; 
+}
+
+.legendText {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  transition: color 0.3s; 
+}
+
+.legendTextLight {
+  color: #1a1a24; 
+}
