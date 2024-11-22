@@ -11,13 +11,13 @@
 }
 
 .lastRow {
-  justify-content: center; 
+  justify-content: center;
 }
 
 .screen {
   margin-top: 40px;
   height: 21px;
-  width: calc(8 * 32px + 7 * 10px); 
+  width: calc(8 * 32px + 7 * 10px);
   background-color: #505050;
   border-radius: 4px;
   display: flex;
@@ -27,11 +27,11 @@
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
 }
 
 .screenLight {
-  background-color: #9b9b9b; 
+  background-color: #9b9b9b;
 }
 
 .legend {
@@ -51,7 +51,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
 }
 
 .livre {
@@ -68,25 +68,25 @@
 }
 
 .livreLight {
-  background-color: #bababa; 
+  background-color: #bababa;
   border: 1px solid #ccc;
 }
 
 .selecionadoLight {
-  background-color: #3f7a49; 
+  background-color: #3f7a49;
 }
 
 .indisponivelLight {
-  background-color: #3F4045; 
+  background-color: #3f4045;
 }
 
 .legendText {
   font-size: 14px;
   color: #fff;
   font-weight: 400;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
 .legendTextLight {
-  color: #1a1a24; 
+  color: #1a1a24;
 }

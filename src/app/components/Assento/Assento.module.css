@@ -12,8 +12,8 @@
 
 .seat.indisponivel:hover,
 .seat.indisponivelLight:hover {
-  transform: none; 
-  cursor: not-allowed; 
+  transform: none;
+  cursor: not-allowed;
 }
 
 .disponivel {
@@ -30,14 +30,14 @@
 }
 
 .disponivelLight {
-  background-color: #bababa; 
+  background-color: #bababa;
 }
 
 .selecionadoLight {
-  background-color: #3f7a49; 
+  background-color: #3f7a49;
 }
 
 .indisponivelLight {
-  background-color: #3F4045; 
+  background-color: #3f4045;
   cursor: not-allowed;
 }

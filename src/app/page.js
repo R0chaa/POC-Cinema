@@ -32,7 +32,9 @@ const Home = () => {
     }
 
     const novosAssentos = assentos.map((row) =>
-      row.map((assento) => (assento === "selecionado" ? "indisponivel" : assento))
+      row.map((assento) =>
+        assento === "selecionado" ? "indisponivel" : assento
+      )
     );
     setAssentos(novosAssentos);
     alert("Compra realizada com sucesso!");
@@ -44,15 +46,26 @@ const Home = () => {
 
   return (
     <div className={`${styles.container} ${lightMode ? styles.light : ""}`}>
-      <button className={styles.lightModeButton} onClick={() => setLightMode(!lightMode)}>
+      <button
+        className={styles.lightModeButton}
+        onClick={() => setLightMode(!lightMode)}
+      >
         <BiAdjust className={styles.icon} />
       </button>
       <h1 className={styles.movieTitle}>{filmes.titulo}</h1>
       <h2 className={styles.sessionTime}>Horário: {filmes.horario}</h2>
       <div className={styles.content}>
-        <Sala assentos={assentos} setAssentos={setAssentos} lightMode={lightMode} />
+        <Sala
+          assentos={assentos}
+          setAssentos={setAssentos}
+          lightMode={lightMode}
+        />
         {!isMobile && (
-          <Infos sinopse={filmes.sinopse} data={filmes.dataLancamento} dir={filmes.direcao} />
+          <Infos
+            sinopse={filmes.sinopse}
+            data={filmes.dataLancamento}
+            dir={filmes.direcao}
+          />
         )}
       </div>
       <button onClick={handleComprar} className={styles.buyButton}>
@@ -60,7 +73,11 @@ const Home = () => {
         <span className={styles.buttonPrice}>R${total.toFixed(2)}</span>
       </button>
       {isMobile && (
-        <Infos sinopse={filmes.sinopse} data={filmes.dataLancamento} dir={filmes.direcao} />
+        <Infos
+          sinopse={filmes.sinopse}
+          data={filmes.dataLancamento}
+          dir={filmes.direcao}
+        />
       )}
     </div>
   );

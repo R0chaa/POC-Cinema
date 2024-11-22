@@ -6,7 +6,12 @@ const Assento = ({ estado, onClick, lightMode }) => {
     lightMode ? styles[`${estado}Light`] : styles[estado]
   }`;
 
-  return <div className={className} onClick={estado === "indisponivel" ? null : onClick}></div>;
+  return (
+    <div
+      className={className}
+      onClick={estado === "indisponivel" ? null : onClick}
+    ></div>
+  );
 };
 
 export default Assento;

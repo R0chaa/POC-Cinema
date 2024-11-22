@@ -4,7 +4,7 @@ import styles from "./Sala.module.css";
 
 const Sala = ({ assentos, setAssentos, lightMode }) => {
   const handleSeatClick = (rowIndex, colIndex) => {
-    setAssentos(prevState => {
+    setAssentos((prevState) => {
       const novosAssentos = prevState.map((row, rIdx) =>
         row.map((assento, cIdx) =>
           rIdx === rowIndex && cIdx === colIndex
@@ -42,19 +42,53 @@ const Sala = ({ assentos, setAssentos, lightMode }) => {
           })}
         </div>
       ))}
-      <div className={`${styles.screen} ${lightMode ? styles.screenLight : ""}`}>Tela</div>
+      <div
+        className={`${styles.screen} ${lightMode ? styles.screenLight : ""}`}
+      >
+        Tela
+      </div>
       <div className={styles.legend}>
         <div className={styles.legendItem}>
-          <div className={`${styles.dot} ${lightMode ? styles.livreLight : styles.livre}`}></div>
-          <span className={`${styles.legendText} ${lightMode ? styles.legendTextLight : ""}`}>Livre</span>
+          <div
+            className={`${styles.dot} ${
+              lightMode ? styles.livreLight : styles.livre
+            }`}
+          ></div>
+          <span
+            className={`${styles.legendText} ${
+              lightMode ? styles.legendTextLight : ""
+            }`}
+          >
+            Livre
+          </span>
         </div>
         <div className={styles.legendItem}>
-          <div className={`${styles.dot} ${lightMode ? styles.selecionadoLight : styles.selecionado}`}></div>
-          <span className={`${styles.legendText} ${lightMode ? styles.legendTextLight : ""}`}>Selecionado</span>
+          <div
+            className={`${styles.dot} ${
+              lightMode ? styles.selecionadoLight : styles.selecionado
+            }`}
+          ></div>
+          <span
+            className={`${styles.legendText} ${
+              lightMode ? styles.legendTextLight : ""
+            }`}
+          >
+            Selecionado
+          </span>
         </div>
         <div className={styles.legendItem}>
-          <div className={`${styles.dot} ${lightMode ? styles.indisponivelLight : styles.indisponivel}`}></div>
-          <span className={`${styles.legendText} ${lightMode ? styles.legendTextLight : ""}`}>Indisponível</span>
+          <div
+            className={`${styles.dot} ${
+              lightMode ? styles.indisponivelLight : styles.indisponivel
+            }`}
+          ></div>
+          <span
+            className={`${styles.legendText} ${
+              lightMode ? styles.legendTextLight : ""
+            }`}
+          >
+            Indisponível
+          </span>
         </div>
       </div>
     </div>
