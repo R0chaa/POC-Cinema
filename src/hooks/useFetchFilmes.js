@@ -4,7 +4,9 @@ const useFetchFilmes = (setFilmes, setAssentos, setLoading) => {
   useEffect(() => {
     async function fetchFilmes() {
       try {
-        const res = await fetch("/dados.json");
+        const res = await fetch(
+          "https://raw.githubusercontent.com/R0chaa/POC-Cinema/refs/heads/main/public/dados.json"
+        );
         const data = await res.json();
         setFilmes(data);
 
@@ -12,7 +14,11 @@ const useFetchFilmes = (setFilmes, setAssentos, setLoading) => {
           Array.from({ length: 8 }, (_, colIndex) => {
             const numero = rowIndex * 8 + colIndex + 1;
             const assento = data.assentos.find((a) => a.numero === numero);
-            return assento ? (assento.disponivel ? "disponivel" : "indisponivel") : "indisponivel";
+            return assento
+              ? assento.disponivel
+                ? "disponivel"
+                : "indisponivel"
+              : "indisponivel";
           })
         );
         setAssentos(formattedAssentos);
