@@ -2,7 +2,7 @@
 
 Este é um projeto de um sistema de cinema desenvolvido com **Next.js** e **React**. O objetivo do projeto é simular a escolha de assentos em uma sala de cinema, com alternância entre temas claro e escuro, cálculo dinâmico do valor total e exibição de informações sobre o filme.
 
----
+## Deploy - [Acesse clicando aqui](https://r0chaa.github.io/POC-Cinema/)
 
 ## Tecnologias Utilizadas
 
@@ -84,7 +84,7 @@ src/
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Lpins01/POC-6
+   git clone https://github.com/R0chaa/POC-Cinema
    ```
 
 2. Instale as dependências:
@@ -130,11 +130,16 @@ src/
 ## Imagens
 
 ### Modo Escuro
-![Modo Escuro](https://github.com/user-attachments/assets/3463678b-ef3c-4176-947b-ee645c6fe527)
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/3463678b-ef3c-4176-947b-ee645c6fe527" alt="Modo Escuro Desktop" width="700">
+  <img src="https://github.com/user-attachments/assets/a6c3fc80-5750-4108-9bb3-2ccbbd529041" alt="Modo Escuro Mobile" width="170">
+</div>
 
 ### Modo Claro
-![Modo Claro](https://github.com/user-attachments/assets/d4c2ed92-d08e-4490-b553-b3576801b413)
-
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/d4c2ed92-d08e-4490-b553-b3576801b413" alt="Modo Claro Desktop" width="700">
+  <img src="https://github.com/user-attachments/assets/0e5f804d-bd32-45c4-a777-fa17c66c477c" alt="Modo Claro Mobile" width="170">
+</div>
 ---
 
 ## Grupo
